@@ -4,5 +4,5 @@
 
 class Logger{
     public:
-    void logMessage(double price);
+    void logMessage(std::string const& message);
 };

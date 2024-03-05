@@ -1,4 +1,6 @@
 #include "car.hpp"
+#include "logger.hpp"
+
 #include <array>
 #include <iostream>
 
@@ -15,4 +17,8 @@ int main() {
 
     car1.setPrice(26'000);
     std::cout << car1.getPrice() << "\n";
+
+    double test = 12'000;
+    std::cout << test << std::endl;
+
 }

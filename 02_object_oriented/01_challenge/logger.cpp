@@ -1,9 +1,8 @@
-// コードを入力してください
 #include <string>
 #include <iostream>
 
 #include "logger.hpp"
 
-void Logger::logMessage(double p){
-    std::cout << "Change Price Log :" << p << std::endl;
+void Logger::logMessage(std::string const& m){
+    std::cout << m << std::endl;
 }

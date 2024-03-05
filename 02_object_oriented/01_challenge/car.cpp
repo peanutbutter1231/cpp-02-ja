@@ -12,9 +12,9 @@ Car::Car(std::string make, std::string model, int year, double price)
 
 void Car::setPrice(double price) {
 //    printPriceChange(this->price, price);
-//    this->price = price;
-    std::cout << "Change Price : " << price << std::endl;
-
+    this->price = price;
+    std::string text = "Price Change!";
+    logger.logMessage(text);
 }
 
 std::string Car::getMake() const { return make; }
