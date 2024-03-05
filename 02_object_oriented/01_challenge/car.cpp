@@ -1,4 +1,5 @@
 #include "car.hpp"
+#include "logger.hpp"
 
 #include <iostream>
 
@@ -10,8 +11,10 @@ Car::Car(std::string make, std::string model, int year, double price)
 }
 
 void Car::setPrice(double price) {
-    printPriceChange(this->price, price);
-    this->price = price;
+//    printPriceChange(this->price, price);
+//    this->price = price;
+    std::cout << "Change Price : " << price << std::endl;
+
 }
 
 std::string Car::getMake() const { return make; }
@@ -23,6 +26,6 @@ void Car::displayInfo() const {
     std::cout << year << " " << make << " " << model << " - $" << price << "\n";
 }
 
-void Car::printPriceChange(double from, double to) const {
-    std::cout << "Changing price from " << from << " to " << to << "\n";
-}
+//void Car::printPriceChange(double from, double to) const {
+//    std::cout << "Changing price from " << from << " to " << to << "\n";
+//}

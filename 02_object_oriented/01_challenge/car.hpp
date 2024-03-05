@@ -1,4 +1,7 @@
+#pragma once
+
 #include <string>
+#include "logger.hpp"
 
 class Car {
 public:
@@ -14,8 +17,8 @@ public:
     void displayInfo() const;
 
 private:
-    void printPriceChange(double from, double to) const;
-
+//    void printPriceChange(double from, double to) const;
+    Logger logger;
     std::string make;
     std::string model;
     int year;

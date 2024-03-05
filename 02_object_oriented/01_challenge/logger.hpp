@@ -1,1 +1,8 @@
-// コードを入力してください
+#pragma once
+
+#include <string>
+
+class Logger{
+    public:
+    void logMessage(double price);
+};
