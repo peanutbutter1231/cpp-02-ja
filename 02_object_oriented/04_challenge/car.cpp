@@ -1,0 +1,33 @@
+#include "car.hpp"
+#include "tire.hpp"
+
+#include <vector>
+#include <string>
+#include <iostream>
+#include <algorithm>
+
+Car::Car(std::string make, std::string model, int year, double price, float tireSize, std::string tireType)
+    : make(make), model(model), year(year), price(price), tire(tireSize, tireType) {
+    if (price < 0) {
+        std::cerr << "Negative Car Price!" << "\n";
+    }
+}
+
+void Car::setPrice(double price) {
+    printPriceChange(this->price, price);
+    this->price = price;
+}
+
+std::string Car::getMake() const { return make; }
+std::string Car::getModel() const { return model; }
+int Car::getYear() const { return year; }
+double Car::getPrice() const { return price; }
+
+void Car::displayInfo() const {
+    std::cout << "Car Info : " << " " << year << " " << make << " " << model << " - $" << price << "\n";
+    std::cout << "Tire Info : " << " " << tire.getSize() << " " << tire.getType() << "\n";
+}
+
+void Car::printPriceChange(double from, double to) const {
+    std::cout << "Changing price from " << from << " to " << to << "\n";
+}
