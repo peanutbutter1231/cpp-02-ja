@@ -1,6 +1,9 @@
 #include "car.hpp"
 
+#include <vector>
+#include <string>
 #include <iostream>
+#include <algorithm>
 
 Car::Car(std::string make, std::string model, int year, double price)
     : make(make), model(model), year(year), price(price) {
