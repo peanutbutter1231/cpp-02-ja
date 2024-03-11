@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/10065/Dojo/cpp-02-ja/01_objects/01_challenge",
-      "program": "c:/Users/10065/Dojo/cpp-02-ja/01_objects/01_challenge/build/Debug/outDebug",
+      "cwd": "c:/Users/10065/Dojo/cpp-02-ja/03_containers_and_templates/01_challenge",
+      "program": "c:/Users/10065/Dojo/cpp-02-ja/03_containers_and_templates/01_challenge/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
