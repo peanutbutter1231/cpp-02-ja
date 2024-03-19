@@ -1,1 +1,7 @@
-// コードを入力してください
+#pragma once
+
+class Animal{
+    public:
+//    void makeSound();
+    virtual void makeSound();
+};
