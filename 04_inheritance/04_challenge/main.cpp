@@ -9,8 +9,12 @@
 
 int main() {
     Scene scene;
-    scene.add_object(std::make_unique<Circle>());
-    scene.add_object(std::make_unique<Square>());
+
+    Circle circle1;
+//    circle1.draw();
+
+    scene.add_object(circle1* );
+//    scene.add_object(std::make_unique<Square>());
 
     scene.render();
 
