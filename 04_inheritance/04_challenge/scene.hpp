@@ -10,8 +10,8 @@
 
 class Scene{
     public:
-    void add_object(std::unique_ptr<Drawable> obj){
-        objects.push_back(std::move(obj));
+    void add_object(Drawable* obj){
+        objects.push_back(obj);
     }
 
     void render() const{
@@ -21,5 +21,5 @@ class Scene{
     }
 
     private:
-    std::vector<std::unique_ptr<Drawable>> objects;
+    std::vector<Drawable*> objects;
 };
