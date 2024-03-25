@@ -1,11 +1,6 @@
-#include <iostream>
-#include <vector>
-#include <memory>
-
-#include "drawable.hpp"
+#include "scene.hpp"
 #include "circle.hpp"
 #include "square.hpp"
-#include "scene.hpp"
 
 int main() {
     Scene scene;
